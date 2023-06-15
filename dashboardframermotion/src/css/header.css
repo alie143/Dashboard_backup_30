@@ -1,0 +1,61 @@
+.navText {
+  background-color: #107dac;
+  margin: 0px;
+  padding-top: 1px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.tap_link {
+  color: black;
+  background-color: #e3daff !important;
+}
+
+/* .active {
+  background: #005073 !important;
+  background-color: #005073 !important;
+  color: white !important;
+} */
+
+.tap_link li .nav-link:hover {
+  background-color: #005073;
+  color: white !important;
+  text-decoration: none;
+}
+/* .tap_link li .nav-link:active{
+  background-color:black;
+  color: white;
+} */
+.content {
+  /* this is needed or the background will be offset by a few pixels at the top */
+  overflow: auto;
+  position: relative;
+}
+
+
+.bg_opacity {
+  opacity: 0.675;
+}
+
+.bg_opacity:hover {
+  opacity: 0.9;
+}
+
+.content::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 80%;
+
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+}
